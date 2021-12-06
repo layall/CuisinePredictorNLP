@@ -18,9 +18,9 @@ from sklearn.pipeline import Pipeline
 
 
 #get data from train and test files
-train = pd.read_json(r"C:\Users\layal\PycharmProjects\finalNLP\train.json")
+train = pd.read_json("train.json")
 train.head()
-test = pd.read_json(r"C:\Users\layal\PycharmProjects\finalNLP\test.json")
+test = pd.read_json("test.json")
 test.head()
 
 #get some baseline numbers and set up cuisines and ingredients
@@ -36,6 +36,7 @@ numberIngredients = 0
 for ingredients in train['ingredients']:
     numberIngredients += len(ingredients)
 
+    
 #ingredient vocab
 vocab = {}
 for ingredient, ing in zip(allIngredients, range(len(allIngredients))):
