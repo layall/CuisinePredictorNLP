@@ -1,4 +1,5 @@
 # CuisinePredictorNLP
+Aarushi Arora & Layal Bata, Natural Language Processing at Occidental College Fall 2021
 
 Our code is written in Python and follows a simple structure, as it is all contained in one file. We first imported the libraries we needed, imported our data, set up our training data, created our model, trained our model based on the training data, looked at some metrics, and used our model on our testing data.
 
